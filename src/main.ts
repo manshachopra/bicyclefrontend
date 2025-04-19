@@ -1,4 +1,4 @@
-import { enableProdMode } from '@angular/core';
+import { enableProdMode } from '@angulaxr/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
@@ -9,11 +9,11 @@ if (environment.production) {
 }
 
 export function baseurl(){
-  return "https://simratbackend.cc3.ksesystem.com/api/";
+  return "http://20.193.249.201:3015/api/";
 }
 
 export function imageurl(){
-  return "https://simratbackend.cc3.ksesystem.com/";
+  return "http://20.193.249.201:3015/";
 }
 
 const provider = [
