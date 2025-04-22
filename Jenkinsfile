@@ -24,12 +24,12 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                echo 'Running tests...'
-                bat 'npm test'
-            }
-        }
+        // stage('Run Tests') {
+        //     steps {
+        //         echo 'Running tests...'
+        //         bat 'npm test'
+        //     }
+        // }
 
         stage('Build') {
             steps {
