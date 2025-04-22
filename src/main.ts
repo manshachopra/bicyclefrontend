@@ -6,7 +6,7 @@ import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
-}s
+}
 
 export function baseurl(){
   return "http://20.193.249.201:3015/api/";
