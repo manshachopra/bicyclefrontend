@@ -34,14 +34,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building application...'
-                // sh 'npm run build'
+                sh 'npm run build'
             }
         }
 
         stage('Deploy') {
             steps {
                 echo 'Deployment stage (add your deploy steps here)...'
-                // bat 'npm start'
+                bat 'npm start'
             }
         }
     }
