@@ -20,16 +20,16 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing dependencies using Node.js 23.11.0...'
-                bat 'npm install'
+                sh 'npm install'
             }
         }
 
-        // stage('Run Tests') {
-        //     steps {
-        //         echo 'Running tests...'
-        //         bat 'npm test'
-        //     }
-        // }
+        stage('Run Tests') {
+            steps {
+                echo 'Running tests...'
+                sh 'npm test'
+            }
+        }
 
         stage('Build') {
             steps {
@@ -41,7 +41,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deployment stage (add your deploy steps here)...'
-                bat 'npm start'
+                sh 'npm start'
             }
         }
     }
