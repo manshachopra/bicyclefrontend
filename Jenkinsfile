@@ -31,12 +31,12 @@ pipeline {
         //     }
         // }
 
-        stage('Build') {
-            steps {
-                echo 'Building application...'
-                sh 'npm run build'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         echo 'Building application...'
+        //         sh 'npm run build'
+        //     }
+        // }
 
         stage('Deploy') {
             steps {
