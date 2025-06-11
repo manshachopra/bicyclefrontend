@@ -14,7 +14,7 @@ pipeline{
         }
         stage('install dependencies'){
             steps{
-                bat'npm install -g @angular/cli'
+                bat'npm install'    
             }
         }
         stage('run'){
