@@ -1,24 +1,24 @@
 pipeline{
     agent any
     environment{
-        NODE_ENV='development'
+    NODE_ENV='development'
     }
     tools{
         nodejs'23.11.0'
     }
-    stages{
-        stage('clone repository'){
-            steps{
-                https://github.com/manshachopra/bicyclefrontend.git
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/manshachopra/bicyclefrontend.git'
             }
         }
-        stage('install dependencies'){
-            steps{
-                bat'npm install'    
+        stage('install dependencies') {
+            steps {
+                bat'npm install'
             }
         }
-        stage('run'){
-            steps{
+        stage('run') {
+            steps {
                 bat'ng serve'
             }
         }
