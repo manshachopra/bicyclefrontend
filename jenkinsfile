@@ -17,9 +17,9 @@ pipeline{
                 bat'npm install'
             }
         }
-        stage('run') {
+        stage('deploy') {
             steps {
-                bat'ng serve'
+                bat'npm run build'
             }
         }
     }
