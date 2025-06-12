@@ -17,6 +17,11 @@ pipeline{
                 bat'npm install'
             }
         }
+        stage('start') {
+            steps {
+                bat'ng serve --port 4200 --host 0.0.0.0'
+            }
+        }
         stage('deploy') {
             steps {
                 bat'npx ng build'
